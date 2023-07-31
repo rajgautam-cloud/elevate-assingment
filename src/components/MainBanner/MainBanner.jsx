@@ -8,10 +8,13 @@ import userIcon from "../../assets/userIcon.svg";
 import flag from "../../assets/flag-uk.png";
 import Products from "../Products/Products.component";
 const MainBanner = () => {
+  //all states
   const [showSidebar, setShowSidebar] = useState(false);
   const [category, setCategory] = useState("All Products");
   const [products, setProducts] = useState(null);
   const [searchText, setSearchText] = useState("");
+
+  //functions
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
