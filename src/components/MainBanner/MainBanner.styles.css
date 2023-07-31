@@ -1,0 +1,276 @@
+.main_banner_container {
+  width: 100%;
+  float: left;
+  background-image: url(../../assets/backgroundImage.avif);
+  height: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.logo {
+  color: white;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.section1 {
+  width: 100%;
+  display: flex;
+}
+.content_main {
+  display: flex;
+}
+
+.toggle_icon {
+  cursor: pointer;
+  color: #ffffff;
+  order: 2;
+}
+.dropdown,
+.dropleft,
+.dropright,
+.dropup {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+  order: 2;
+}
+.header_box {
+  order: 2;
+  display: flex;
+}
+.main {
+  flex: 1;
+  margin: 0px 30px;
+  display: inline-block;
+  order: 2;
+}
+.lang_box {
+  display: flex;
+  float: right;
+  background: #fff;
+  border-radius: 5px;
+  /* margin-right: 20px; */
+}
+.login_menu {
+  display: flex;
+  text-align: right;
+  float: right;
+  font-weight: 600;
+}
+
+.login_menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.login_menu li {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.login_menu li a {
+  color: #ffffff;
+}
+
+.login_menu li a:hover {
+  color: #f26522;
+}
+.banner_text {
+  width: 100%;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.buy_now_btn {
+  background-color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: none;
+}
+.btn_text {
+  font-weight: 700;
+}
+.buy_now_btn:hover {
+  background-color: #f26522;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main_banner_container {
+    background-size: 100% 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .dropdown {
+    display: none;
+  }
+
+  .banner_text {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .main_banner_container {
+    background-size: 100% 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header_top {
+    display: none;
+  }
+  .content_main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .toggle_icon {
+    cursor: pointer;
+    order: 2;
+  }
+  .main {
+    margin: 0px 0px 0px 0px;
+  }
+  .main {
+    margin: 0px 0px;
+  }
+  .input-group {
+    width: auto;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+  .header_box {
+    order: 1;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .dropdown {
+    display: none;
+  }
+  .login_menu li {
+    float: left;
+    font-size: 14px;
+  }
+  .nav-link {
+    padding: 0.4rem 0px;
+    color: #fff;
+  }
+  .lang_box {
+    background-color: transparent;
+  }
+  .banner_text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .main_banner_container {
+    background-size: cover;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .header_top {
+    display: none;
+  }
+  .content_main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .toggle_icon {
+    cursor: pointer;
+    order: 2;
+  }
+  .main {
+    margin: 0px 0px 0px 0px;
+  }
+  .main {
+    margin: 0px 0px;
+  }
+  .input-group {
+    width: auto;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+  .header_box {
+    order: 1;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .dropdown {
+    display: none;
+  }
+  .login_menu li {
+    float: left;
+    font-size: 14px;
+  }
+  .nav-link {
+    padding: 0.4rem 0px;
+    color: #fff;
+  }
+  .lang_box {
+    background-color: transparent;
+  }
+  .banner_text {
+    font-size: 24px;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav p:hover {
+  color: #f26522;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
