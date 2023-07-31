@@ -1,17 +1,17 @@
 import React from "react";
-
+import "./ProductCard.styles.css";
 const ProductCard = ({ product }) => {
   return (
     <div className="col-md-3 col-sm-4 col-12 px-3 py-3">
-      <div class="card">
+      <div className="card">
         <img
-          class="card-img-top"
+          className="card-img-top"
           src={product.image}
           alt="Card image cap"
           style={{ height: "40vh", padding: "20px" }}
         />
-        <div class="card-body">
-          <h5 class="card-title">
+        <div className="card-body">
+          <h5 className="card-title">
             {product.title.length > 25
               ? product.title.slice(0, 25) + "..."
               : product.title}
@@ -21,11 +21,7 @@ const ProductCard = ({ product }) => {
               ? product.description.slice(0, 60) + "..."
               : product.description}
           </p>
-          <a
-            href="#"
-            class="btn btn-secondary"
-            style={{ backgroundColor: "#f26522", border: "none" }}
-          >
+          <a href="#" className="btn btn-secondary buy_now">
             Buy Now
           </a>
         </div>

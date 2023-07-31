@@ -51,9 +51,9 @@ const MainBanner = () => {
           <div className="container">
             <div className="content_main">
               {showSidebar ? (
-                <div class="sidenav">
+                <div className="sidenav">
                   <p
-                    class="closebtn"
+                    className="closebtn"
                     onClick={() => {
                       toggleSidebar();
                     }}
@@ -128,18 +128,18 @@ const MainBanner = () => {
                 </button>
               </div>
               <div className="header_box ">
-                <div class="login_menu">
+                <div className="login_menu">
                   <ul>
                     <li className="px-3">
                       <a href="#">
                         <img src={cartIcon} className=" px-1" />
-                        <span class="">Cart</span>
+                        <span className="">Cart</span>
                       </a>
                     </li>
                     <li className="pr-3">
                       <a href="#">
                         <img src={userIcon} className=" px-1" />
-                        <span class="">Cart</span>
+                        <span className="">Cart</span>
                       </a>
                     </li>
                   </ul>
