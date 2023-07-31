@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
           className="card-img-top"
           src={product.image}
           alt="Card image cap"
-          style={{ height: "40vh", padding: "20px" }}
+          style={{ height: "40vh", padding: "40px" }}
         />
         <div className="card-body">
           <h5 className="card-title">
